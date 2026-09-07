@@ -1,0 +1,20 @@
+{
+  "reality_id": "SELFCOMM-SIMPLE-V0.1",
+  "standing": "LIVE_CANDIDATE",
+  "act": "ACT-SELFCOMM-V0.1-CLEAN-REENACTMENT-001",
+  "custody_path": "interactions/",
+  "locator": "latest.json",
+  "acceptance": "origin recontacts response without Founder transporting its content",
+  "authority_ceiling": "LIVE_CANDIDATE_V0.1",
+  "not_authorized": [
+    "canonical_migration",
+    "replacement_of_self_communication",
+    "autonomous_looping",
+    "additional_infrastructure",
+    "schema_expansion",
+    "webhook_redesign",
+    "protocol_hardening",
+    "deployment",
+    "canon_or_institutional_promotion"
+  ]
+}
