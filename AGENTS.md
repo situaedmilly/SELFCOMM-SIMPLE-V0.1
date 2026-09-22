@@ -29,12 +29,20 @@ canonical_migration: NOT_AUTHORIZED
 replacement_of_self_communication: NOT_AUTHORIZED
 autonomous_looping: NOT_AUTHORIZED
 additional_infrastructure: NOT_AUTHORIZED
-schema_expansion: NOT_AUTHORIZED
+schema_expansion: AUTHORIZED_BOUNDED_FOR_SELFGRAPH_SELFCOMM_V0.1
 webhook_redesign: NOT_AUTHORIZED
 protocol_hardening: NOT_AUTHORIZED
 deployment: NOT_AUTHORIZED
 canon_or_institutional_promotion: NOT_AUTHORIZED
 ```
+
+## Bounded implementation amendment
+
+Founder authorization for this transition permits only the local, append-only
+SELFGRAPH JSONL substrate, the SELFCOMM envelope validator, their schemas,
+tests, and implementation checkpoint. It does not authorize deployment,
+daemon installation, autonomous looping, remote mutation, protocol
+hardening, or canon/institutional promotion.
 
 ## Pass Condition
 
