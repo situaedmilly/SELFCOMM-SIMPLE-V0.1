@@ -6,3 +6,5 @@
 - Explicit ceiling: no deployment, daemon installation, autonomous looping, remote mutation, or canon promotion.
 - Rollback: revert the amendment and delete the added `runtime/`, `protocol/`, `graph/events.jsonl`, and `tests/` files.
 - Verification: Python unit tests, schema parse, one-shot runtime probe, and post-change Git diff/status.
+- Promotion: committed as `d290cf1` after rebasing onto `origin/main`; pushed to `origin/main`.
+- Final custody: local `main` and `origin/main` are aligned; no uncommitted changes.
