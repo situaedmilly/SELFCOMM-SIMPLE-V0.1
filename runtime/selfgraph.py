@@ -9,6 +9,7 @@ import time
 from pathlib import Path
 
 from selfcomm import EnvelopeError, parse_envelope
+from protocolself_registry import boot_protocolself_registry
 
 DEFAULT_EVENT_LOG = Path(__file__).resolve().parents[1] / "graph" / "events.jsonl"
 
@@ -49,7 +50,9 @@ def main() -> None:
     parser.add_argument("--events", type=Path, default=DEFAULT_EVENT_LOG)
     parser.add_argument("--once", action="store_true")
     args = parser.parse_args()
+    protocolself_boot = boot_protocolself_registry()
     print("[SELFGRAPH] boot")
+    print(f"[SELFCOMM][PROTOCOLSELF] {json.dumps(protocolself_boot, sort_keys=True)}")
     print(f"[SELFGRAPH] event stream: {args.events}")
     for line in follow(args.events, once=args.once):
         print(process_line(line), flush=True)
